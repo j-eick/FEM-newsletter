@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import "../../App.css";
-import Button from "../button";
+import Button from "../button/index";
 
 export default function Input() {
   const [input, setInput] = useState<string>("");
