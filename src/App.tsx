@@ -16,7 +16,7 @@ function App() {
       <div className="right">
         <img
           className="img"
-          src="src/assets/images/illustration-sign-up-desktop.svg"
+          src="public/images/illustration-sign-up-desktop.svg"
           alt=""
         />
       </div>

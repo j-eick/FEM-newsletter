@@ -8,7 +8,7 @@ export default function List() {
         {liItems.map((item) => (
           <li key={item.text} className="listItem">
             <img
-              src="src/assets/images/icon-list.svg"
+              src="public/images/icon-list.svg"
               alt="list-icons"
               width="18px"
             />
