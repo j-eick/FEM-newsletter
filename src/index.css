@@ -10,8 +10,24 @@
 :root {
   --roboto-regular: "Roboto-Regular";
   --roboto-bold: "Roboto-Bold";
-  line-height: 1.5;
-  font-weight: 400;
+
+  --input_error-color: rgb(227, 130, 130);
+  --darkGrey: hsl(234, 29%, 20%);
+  --charcoalGrey: hsl(235, 18%, 26%);
+  --grey: hsl(231, 7%, 60%);
+  --white: hsl(0, 0%, 100%);
+
+  --button-bg: var(--charcoalGrey);
+  --button_text-color: var(--white);
+  --button_text-size: var(--standard-textSize);
+  --button_text-weight-700: var(--font-weight-700);
+
+  --title-text: 56px;
+  --standard-textSize: 16px;
+  --inputLabel-textSize: 12px;
+  --inputValue_text-color: var(--grey);
+  --font-weight-400: 400;
+  --font-weight-700: 700;
 
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -19,7 +35,16 @@
 }
 
 html {
+  height: 100%;
   font-size: 16px;
+}
+
+body {
+  height: 100%;
+  background-color: #36384d;
+  display: grid;
+  place-items: center;
+
   font-family: var(--roboto-regular);
 }
 
