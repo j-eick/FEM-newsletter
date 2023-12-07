@@ -1,11 +1,35 @@
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .container {
-  height: 65dvh;
+  height: 610px;
   width: 840px;
   padding: 3%;
   background-color: rgb(247, 247, 247);
   border-radius: 35px;
 
   display: flex;
+}
+
+.container_thanksPage {
+  height: 500px;
+  width: 500px;
+
+  padding: 50px 65px;
+
+  display: flex;
+  flex-direction: column;
+
+  background-color: rgb(247, 247, 247);
+  border-radius: 35px;
+
+  animation: fade-in 1s ease-in;
 }
 
 .left {
@@ -32,6 +56,14 @@
   margin-bottom: 25px;
   font-family: var(--roboto-bold);
   font-size: var(--title-text);
+}
+
+.title_thanksPage {
+  margin-top: 30px;
+  margin-bottom: 25px;
+  font-family: var(--roboto-bold);
+  font-size: var(--title-text);
+  line-height: 1;
 }
 
 .description {
