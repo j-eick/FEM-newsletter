@@ -1,11 +1,13 @@
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import "../../App.css";
 import Button from "../button/index";
+import { useNavigate } from "react-router";
 
 export default function Input() {
   const [input, setInput] = useState<string>("");
   const [isEmailInvalid, setIsEmailInvalid] = useState<boolean>(Boolean);
   const inputRef = useRef<HTMLInputElement | null>(null);
+  const navigate = useNavigate();
 
   const handleOnChange = (e: React.ChangeEvent<HTMLInputElement>): void => {
     setInput(e.target.value);
@@ -15,20 +17,17 @@ export default function Input() {
     const checkInput = /^[a-zA-Z0-9.]{1,25}@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]{2,5}$/;
 
     if (checkInput.test(input)) {
-      console.log("valid input");
-
       setIsEmailInvalid(false);
+      navigate("/thanks");
     } else {
-      console.log("invalid input");
       setIsEmailInvalid(true);
-    }
-
-    if (inputRef.current) {
-      inputRef.current.focus();
+      if (inputRef.current) {
+        inputRef.current.focus();
+      }
     }
   };
 
-  useEffect(() => {}, [input]);
+  // useEffect(() => {}, [input]);
 
   return (
     <>
