@@ -1,0 +1,75 @@
+@media screen and (max-width: 375px) {
+  .container {
+    height: 100dvh;
+    width: 100dvw;
+
+    padding: 0px;
+
+    display: flex;
+    flex-direction: column-reverse;
+    border-radius: 0px;
+  }
+  .right {
+    flex: 1;
+  }
+
+  .left {
+    width: 100%;
+    padding: 0px 25px;
+
+    flex: 2;
+  }
+
+  .img {
+    height: 100%;
+  }
+
+  .listItem {
+    /* height: 20px; */
+    display: flex;
+    align-items: start;
+    gap: 12px;
+
+    font-family: var(--roboto-bold);
+    font-size: var(--standard-textSize);
+    color: var(--charcoalGrey);
+  }
+
+  .title {
+    font-size: var(--title_text-mobile);
+  }
+
+  .button {
+    margin-bottom: 40px;
+  }
+
+  .container_thanksPage {
+    height: 100dvh;
+    width: 100dvw;
+
+    padding: 80px 25px 0px 25px;
+
+    /* display: flex;
+    flex-direction: column; */
+
+    background-color: rgb(247, 247, 247);
+    border-radius: 0px;
+
+    animation: fade-in 1s ease-in;
+  }
+
+  .title_thanksPage {
+    margin-top: 30px;
+    margin-bottom: 25px;
+    font-family: var(--roboto-bold);
+    font-size: var(--title_text-mobile);
+    line-height: 1;
+  }
+
+  .description-thxPage {
+    margin-bottom: 320px;
+    font-size: var(--standard-textSize);
+    color: var(--charcoalGrey);
+    line-height: 1.5;
+  }
+}
