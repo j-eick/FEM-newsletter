@@ -9,12 +9,13 @@
 
 .container {
   height: 610px;
-  width: 840px;
+  width: 900px;
   padding: 3%;
   background-color: rgb(247, 247, 247);
   border-radius: 35px;
 
   display: flex;
+  position: relative;
 }
 
 .container_thanksPage {
@@ -34,9 +35,9 @@
 
 .left {
   width: 100%;
-  padding: 25px;
+  padding: 25px 20px;
 
-  /* border: 1px solid; */
+  line-height: 1.4;
 }
 
 .right {
@@ -73,6 +74,13 @@
   line-height: 1.5;
 }
 
+.description_thanksPage {
+  margin-bottom: 30px;
+  font-size: var(--standard-textSize);
+  color: var(--charcoalGrey);
+  line-height: 1.5;
+}
+
 .list {
   margin-bottom: 35px;
   display: flex;
@@ -83,18 +91,13 @@
 .listItem {
   /* height: 20px; */
   display: flex;
-  align-items: center;
+  align-items: start;
   gap: 12px;
 
   font-family: var(--roboto-bold);
   font-size: var(--standard-textSize);
   color: var(--charcoalGrey);
 }
-
-/* .inputContainer {
-  width: 100%;
-  position: relative;
-} */
 
 .input {
   padding: 15px;
@@ -153,39 +156,3 @@
     cursor: pointer;
   }
 }
-
-/* .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-} */
