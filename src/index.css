@@ -22,7 +22,15 @@
   --button_text-size: var(--standard-textSize);
   --button_text-weight-700: var(--font-weight-700);
 
-  --title-text: 56px;
+  --title-text: 50px;
+  --standard-textSize: 16px;
+  --inputLabel-textSize: 12px;
+  --inputValue_text-color: var(--grey);
+  --font-weight-400: 400;
+  --font-weight-700: 700;
+
+  /* MOBILE VIEW */
+  --title_text-mobile: 40px;
   --standard-textSize: 16px;
   --inputLabel-textSize: 12px;
   --inputValue_text-color: var(--grey);
