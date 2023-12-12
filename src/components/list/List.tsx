@@ -7,7 +7,7 @@ export default function List() {
       <ul className="list">
         {liItems.map((item) => (
           <li key={item.text} className="listItem">
-            <img src="/images/icon-list.svg" alt="list-icons" width="20px" />
+            <img src="/images/icon-list.svg" alt="list-icons" width="20" />
             {item.text}
           </li>
         ))}
