@@ -1,8 +1,23 @@
 import "./App.css";
+import "./mobileMax500.css";
 import Input from "./components/input";
 import List from "./components/list";
+import { useState } from "react";
 
 function App() {
+  const [windowSize, setWindowSize] = useState({
+    width: window.innerWidth,
+    height: window.innerHeight,
+  });
+
+  const reportWindowSize = (): void => {
+    setWindowSize({
+      width: window.innerWidth,
+      height: window.innerHeight,
+    });
+  };
+  window.onresize = reportWindowSize;
+
   return (
     <div className="container">
       <div className="left">
@@ -14,11 +29,19 @@ function App() {
         <Input />
       </div>
       <div className="right">
-        <img
-          className="img"
-          src="/images/illustration-sign-up-desktop.svg"
-          alt=""
-        />
+        {windowSize.width < 376 ? (
+          <img
+            className="img"
+            src="/images/illustration-sign-up-mobile.svg"
+            alt=""
+          />
+        ) : (
+          <img
+            className="img"
+            src="/images/illustration-sign-up-desktop.svg"
+            alt=""
+          />
+        )}
       </div>
     </div>
   );
